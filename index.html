@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakila P. Rathnayake | Mechatronics</title>
+    <meta name="description" content="Robotics & Mechatronics Engineering Portfolio">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        bg: '#0a0a0a',
+                        surface: '#121212',
+                        border: '#2a2a2a',
+                        primary: '#00f0ff', // Cyberpunk Cyan
+                        secondary: '#707070',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .mono-tag {
+            @apply px-2 py-1 text-[10px] uppercase tracking-wider font-mono rounded border border-border bg-surface text-secondary hover:text-primary hover:border-primary/50 transition-colors cursor-default;
+        }
+        .card {
+            @apply bg-[#0f0f0f] border border-border p-6 rounded-lg hover:border-primary/30 transition-colors;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen py-12 px-4 md:px-8">
+
+    <div class="max-w-4xl mx-auto space-y-12">
+
+        <!-- Header / Profile Block -->
+        <header class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-border pb-8">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-2">
+                    Shakila Rathnayake
+                </h1>
+                <div class="flex flex-wrap items-center gap-3 text-secondary font-mono text-sm">
+                    <span class="text-primary">Mechatronics Engineer</span>
+                    <span>•</span>
+                    <span>Robotics & AI</span>
+                    <span>•</span>
+                    <span>Embedded Systems</span>
+                </div>
+                <p class="mt-4 max-w-xl text-gray-400 leading-relaxed">
+                    Final Year Engineering Student bridging the gap between intelligent software and physical hardware. Specializing in ROS2, Computer Vision, and Adaptive Control Systems.
+                </p>
+            </div>
+            
+            <div class="flex md:flex-col gap-3 shrink-0">
+                <a href="https://github.com" target="_blank" class="flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="github" class="w-4 h-4"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/shakilapraveen/" target="_blank" class="flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+                </a>
+                <a href="mailto:shakilabeta@gmail.com" class="flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="mail" class="w-4 h-4"></i> Email
+                </a>
+                <a href="#" class="flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="file-text" class="w-4 h-4"></i> Download CV
+                </a>
+            </div>
+        </header>
+
+        <!-- Tech Stack: Compact Grid -->
+        <section>
+            <h2 class="text-sm font-mono uppercase tracking-widest text-secondary mb-6 flex items-center gap-2">
+                <i data-lucide="cpu" class="w-4 h-4"></i> Technical Arsenal
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                
+                <div class="card">
+                    <div class="text-xs font-mono text-secondary mb-2">Languages</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-white font-medium">Python</span>
+                        <span class="text-white font-medium">C++</span>
+                        <span class="text-white font-medium">C</span>
+                        <span class="text-white font-medium">MATLAB</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="text-xs font-mono text-secondary mb-2">Hardware</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-white font-medium">ESP32</span>
+                        <span class="text-white font-medium">STM32</span>
+                        <span class="text-white font-medium">Arduino</span>
+                        <span class="text-white font-medium">PLC</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="text-xs font-mono text-secondary mb-2">Robotics</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-white font-medium">ROS2</span>
+                        <span class="text-white font-medium">ANFIS</span>
+                        <span class="text-white font-medium">PID</span>
+                        <span class="text-white font-medium">SLAM</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="text-xs font-mono text-secondary mb-2">AI & Tools</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-white font-medium">TensorFlow</span>
+                        <span class="text-white font-medium">OpenCV</span>
+                        <span class="text-white font-medium">SolidWorks</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Main Project Highlight -->
+        <section>
+            <h2 class="text-sm font-mono uppercase tracking-widest text-secondary mb-6 flex items-center gap-2">
+                <i data-lucide="activity" class="w-4 h-4"></i> Current Research
+            </h2>
+            <div class="card border-l-4 border-l-primary relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i data-lucide="scan-line" class="w-32 h-32"></i>
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-6 relative z-10">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h3 class="text-xl font-bold text-white">Autonomous Indoor Robot</h3>
+                            <span class="px-2 py-0.5 text-[10px] font-mono bg-primary/10 text-primary rounded border border-primary/20">ONGOING</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            Developing a low-cost ROS2 mobile platform addressing navigation undecidability. Implements a hybrid strategy combining trajectory prediction with gesture-based interaction (Following-in-Front).
+                        </p>
+                        <ul class="space-y-1 text-sm text-gray-500 font-mono mb-4">
+                            <li>> 3-Tier Arch: ESP32 (Motor) + RPi (Bridge) + PC (AI)</li>
+                            <li>> Sensor Fusion: Encoder + IMU + 2D LiDAR</li>
+                            <li>> Tech: ROS2 Humble, SLAM Toolbox, MediaPipe</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Log -->
+        <section>
+            <h2 class="text-sm font-mono uppercase tracking-widest text-secondary mb-6 flex items-center gap-2">
+                <i data-lucide="folder-git-2" class="w-4 h-4"></i> Project Log
+            </h2>
+            
+            <div class="space-y-4">
+                <!-- Item -->
+                <div class="group flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 p-4 hover:bg-surface rounded transition-colors border-b border-dashed border-gray-900">
+                    <div class="md:w-48 shrink-0 text-sm font-mono text-secondary group-hover:text-primary transition-colors">
+                        Neuro-Fuzzy Maglev
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-white font-medium mb-1">Adaptive Control System</h4>
+                        <p class="text-sm text-gray-500 mb-2">ANFIS controller for magnetic levitation, combining fuzzy logic with neural networks to handle nonlinear dynamics.</p>
+                        <div class="flex gap-2">
+                            <span class="mono-tag">MATLAB</span>
+                            <span class="mono-tag">ANFIS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="group flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 p-4 hover:bg-surface rounded transition-colors border-b border-dashed border-gray-900">
+                    <div class="md:w-48 shrink-0 text-sm font-mono text-secondary group-hover:text-primary transition-colors">
+                        Hybrid LSTM-ANFIS
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-white font-medium mb-1">Time-Series Prediction</h4>
+                        <p class="text-sm text-gray-500 mb-2">Integrated LSTM networks with ANFIS for real-time control prediction, outperforming standalone traditional controllers.</p>
+                        <div class="flex gap-2">
+                            <span class="mono-tag">Deep Learning</span>
+                            <span class="mono-tag">Control Theory</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="group flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 p-4 hover:bg-surface rounded transition-colors border-b border-dashed border-gray-900">
+                    <div class="md:w-48 shrink-0 text-sm font-mono text-secondary group-hover:text-primary transition-colors">
+                        EMNIST Recognition
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-white font-medium mb-1">Character Classification CNN</h4>
+                        <p class="text-sm text-gray-500 mb-2">Convolutional Neural Network trained on Extended MNIST dataset for 47-class character recognition.</p>
+                        <div class="flex gap-2">
+                            <span class="mono-tag">TensorFlow</span>
+                            <span class="mono-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="group flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 p-4 hover:bg-surface rounded transition-colors border-b border-dashed border-gray-900">
+                    <div class="md:w-48 shrink-0 text-sm font-mono text-secondary group-hover:text-primary transition-colors">
+                        Aerodynamic Levitation
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-white font-medium mb-1">PID Closed-Loop Control</h4>
+                        <p class="text-sm text-gray-500 mb-2">System identification and PID tuning for stable height control of a ball in an air stream.</p>
+                        <div class="flex gap-2">
+                            <span class="mono-tag">Arduino</span>
+                            <span class="mono-tag">PID</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section class="grid md:grid-cols-2 gap-12">
+            <!-- Experience -->
+            <div>
+                <h2 class="text-sm font-mono uppercase tracking-widest text-secondary mb-6 flex items-center gap-2">
+                    <i data-lucide="briefcase" class="w-4 h-4"></i> Experience
+                </h2>
+                <div class="border-l border-border pl-6 space-y-8">
+                    <div class="relative">
+                        <div class="absolute -left-[29px] top-1.5 w-3 h-3 rounded-full bg-secondary border-2 border-[#050505]"></div>
+                        <h3 class="text-white font-medium">Freelance Engineer</h3>
+                        <div class="text-xs font-mono text-primary mb-1">MachineTrend • 2020-Present</div>
+                        <p class="text-sm text-gray-500">Robotics system design, ROS2 implementation, and embedded firmware development.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[29px] top-1.5 w-3 h-3 rounded-full bg-border border-2 border-[#050505]"></div>
+                        <h3 class="text-white font-medium">Technical Writer</h3>
+                        <div class="text-xs font-mono text-primary mb-1">MechCollege • 2020-Present</div>
+                        <p class="text-sm text-gray-500">Synthesizing research papers into accessible engineering articles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+                <h2 class="text-sm font-mono uppercase tracking-widest text-secondary mb-6 flex items-center gap-2">
+                    <i data-lucide="graduation-cap" class="w-4 h-4"></i> Education
+                </h2>
+                <div class="space-y-6">
+                    <div class="card p-4">
+                        <h3 class="text-white font-medium">B.Tech Mechatronics</h3>
+                        <div class="text-xs font-mono text-gray-400 mt-1">Open University of Sri Lanka</div>
+                        <div class="text-xs text-secondary mt-1">2019 — Present</div>
+                    </div>
+                    <div class="card p-4 opacity-60">
+                        <h3 class="text-white font-medium">GCE A/Ls Physical Science</h3>
+                        <div class="text-xs font-mono text-gray-400 mt-1">St. Thomas College</div>
+                        <div class="text-xs text-secondary mt-1">2018</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="pt-12 text-center text-xs font-mono text-gray-600">
+            <p>INIT_SYSTEM: PORTFOLIO_LOADED_SUCCESSFULLY</p>
+            <p class="mt-2">&copy; <span id="year"></span> Shakila Rathnayake</p>
+        </footer>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
